@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: white;
+    }
+    .markdown-body table tr {
+        background-color: #1c1c1c;
+    }
+    .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+    }
+}
+</style>
+
+
+
+<link rel="alternate" type="application/rss+xml" href="../../../../feed.xml" title="Nepal QR payments: eSewa, IME, Khalti">
+<link rel="shortcut icon" href="/images/noone_ico_grey.svg" />
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/fretboard.f32f2a8d5293869f0195.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty.0ae3265014f89d9850bf.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/global.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/misc.css">
+
+<script type="text/x-mathjax-config">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  },
+  svg: {
+    fontCache: 'global',
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="../../../../scripts/tex-svg.js">
+</script>
+
+<style>
+</style>
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+<div id="color-mode-switch">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+  </svg>
+  <input type="checkbox" id="switch" />
+  <label for="switch">Dark Mode Toggle</label>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+  </svg>
+</div>
+
+<script type="text/javascript">
+  // Update root html class to set CSS colors
+  const toggleDarkMode = () => {
+    const root = document.querySelector('html');
+    root.classList.toggle('dark');
+  }
+
+  // Update local storage value for colorScheme
+  const toggleColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
+    else localStorage.setItem('colorScheme', 'light');
+  }
+
+  // Set toggle input handler
+  const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+  if (toggle) toggle.onclick = () => {
+    toggleDarkMode();
+    toggleColorScheme();
+  }
+
+  // Check for color scheme on init
+  const checkColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    // Default to light for first view
+    if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
+    // If previously saved to dark, toggle switch and update colors
+    if (colorScheme === 'dark') {
+      toggle.checked = true;
+      toggleDarkMode();
+    }
+  }
+  checkColorScheme();
+</script>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Nepal QR payments: eSewa, IME, Khalti" />
+<meta name="twitter:image" content="/images/noone_ico_grey.svg" />
+
+
+<br>
+<h1 style="margin-bottom:7px"> Nepal QR payments: eSewa, IME, Khalti </h1>
+<small style="float:left; color: #888"> 2024 Oct 22 </small>
+<small style="float:right; color: #888"><a href="../../../../index.html">See all posts</a></small>
+<br> <br> <br>
+<title> Nepal QR payments: eSewa, IME, Khalti </title>
+
+<p>В целом алгоритм действия во всех приложениях одинаковый:
+устанавливаешь приложение, регистрируешься по номеру телефона, проходишь
+KYC и можно пользоваться. В отличии от индийских приложений такого рода,
+которые не являются самостоятельными (PayTM, BHIM и тп), а есть всего
+лишь более удобная надстройка над банковскими приложениями, непальские -
+это полноценные аппы, в которых деньги можно хранить, переводить и ими
+расплачиваться практически везде. Я помню в Читване: средь чиста поля
+стоит стол, на столе - банки с медом и дедушка, собравший его, при них.
+И у дедушки на столе QR - пожалуйста, можно за кеш, можно за безнал
+купить.</p>
+<h2 id="esewa">eSewa</h2>
+<p><img
+src="https://bafybeigip5m7agrmovhityw5lgujbs6s3x6noowlrfr2zscf2vwyrtffei.ipfs.flk-ipfs.xyz/1.jpg" /></p>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.f1soft.esewa">Google
+Play</a></p>
+<p>Это было самое первое приложение, которое я установила еще в 2021
+году. Для KYC нужно сфоткать первую страницу и страницу с визой, а также
+прислать свое актуальное фото. В 2021 году виза нужна была не
+туристическая, сейчас вроде как принимают любую.</p>
+<h2 id="ime">IME</h2>
+<p><img
+src="https://bafybeigip5m7agrmovhityw5lgujbs6s3x6noowlrfr2zscf2vwyrtffei.ipfs.flk-ipfs.xyz/2.jpg" /></p>
+<p>Нужно установить приложение (тут оставлю рефералочку по 25 рупий нам
+обоим прилетит): <a
+href="https://app.imepay.com.np/links/roZMPECdKpy4LTBw8">Тыц</a></p>
+<p>Или через <a
+href="https://play.google.com/store/apps/details?id=com.swifttechnology.imepay">Google
+Play</a> и мой реферальный код: CS3846037</p>
+<p>Верификация такая же, но в отличии от eSewa тут можно еще получить
+пластиковую карту, с которой можно снимать 25000npr в месяц (ну да,
+200$, но в общем-то и на этом спасибо). Карту дают в офисе в Катманду
+тут: <a href="https://maps.app.goo.gl/ztrjqrnwckaUxyEA8">27.729307,
+85.325132</a>. Карта действует всего год. Я получала ее в 2023 году
+весной, а в 2024, когда пришла за новой оказалось, что у них они...
+закончились. Обещали, что сообщат, когда появятся, но вот уже полгода
+как, а ничего и нигде не пришло. Но в целом как бэ и не сильно надо, так
+как даже за продление визы теперь в тч можно оплатить и через QR. Так
+что кеш теперь нужен разве что где-то глубоко в горах, где интернет еще
+просто не работает.</p>
+<p><img
+src="https://bafybeigip5m7agrmovhityw5lgujbs6s3x6noowlrfr2zscf2vwyrtffei.ipfs.flk-ipfs.xyz/3.jpg" /></p>
+<h2 id="khalti">Khalti</h2>
+<p><img
+src="https://bafybeigip5m7agrmovhityw5lgujbs6s3x6noowlrfr2zscf2vwyrtffei.ipfs.flk-ipfs.xyz/4.jpg" /></p>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.khalti">Google
+Play</a></p>
+<p>Начал принимать документы иностранцев только в 2024 году. Но
+верификация легкая. У меня с ним были эксперименты еще пару лет назад,
+тогда я KYC пройти не смогла и забила, Было другое имя там, виза и
+вообще не пойми что. За полчаса переписки в whatsapp со службой
+поддержки и отправки им пары фоточек паспорта и себя с паспортом - все
+заработало.</p>
+<hr />
+<p>Так же в Непале можно открыть и аккаунт в банке, но в этом есть
+некоторая бессмысленность и элементы мазохизма, ибо:</p>
+<ul>
+<li>занимает процесс выпуска карты несколько недель,</li>
+<li>работает она ровно по сроку визы, потом надо снова идти в банк и
+показывать продление или новую визу,</li>
+<li>непальские банковские карты такая же "тыква", как и российские -
+работают они только в Непале. Правда связано это не с какими-то
+санкциями, а с тем, что правительство всячески ограничивает отток денег
+из страны: все международные системы переводов по типу Western Union
+работают только на получение, отправка не возможна. И вот карты тоже -
+только на оплату внутри страны.</li>
+</ul>
+<hr />
+<p>Пополнять eSewa, IME и Khalti легко можно через крипту на бинансе или
+на других биржах, но надо иметь ввиду, что в Непале крипта есть black
+market, то есть она не просто находится в серой нерегулируемой законом
+зоне, а любые сделки с ней запрещены, Но в общем-то на биржах все равно
+находится достаточно желающих ее продать и купить.</p>
+<hr />
+<p>И пару слов про непальские симки, в отличии от индийских - они почти
+вечные. В приложении показывается срок действия до которого симка будет
+активна. В моем случае, на октябрь 2024 года моя симка будет действовать
+до августа 2026. Но этот срок зависит от суммы последнего пополнения,
+поэтому даже если бы я не пользовалась ей эти два года - могу закинуть
+пару сотен рупий (которые никуда не сгорят, их потом можно использовать)
+- и продлить еще на пару лет. Так что не выкидывайте после отъезда -
+вдруг еще вернетесь...</p>
+ </div> 

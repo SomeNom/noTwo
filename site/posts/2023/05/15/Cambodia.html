@@ -1,0 +1,206 @@
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: white;
+    }
+    .markdown-body table tr {
+        background-color: #1c1c1c;
+    }
+    .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+    }
+}
+</style>
+
+
+
+<link rel="alternate" type="application/rss+xml" href="../../../../feed.xml" title="Камбоджа и банковские карты">
+<link rel="shortcut icon" href="/images/noone_ico_grey.svg" />
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/fretboard.f32f2a8d5293869f0195.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty.0ae3265014f89d9850bf.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/global.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/misc.css">
+
+<script type="text/x-mathjax-config">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  },
+  svg: {
+    fontCache: 'global',
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="../../../../scripts/tex-svg.js">
+</script>
+
+<style>
+</style>
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+<div id="color-mode-switch">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+  </svg>
+  <input type="checkbox" id="switch" />
+  <label for="switch">Dark Mode Toggle</label>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+  </svg>
+</div>
+
+<script type="text/javascript">
+  // Update root html class to set CSS colors
+  const toggleDarkMode = () => {
+    const root = document.querySelector('html');
+    root.classList.toggle('dark');
+  }
+
+  // Update local storage value for colorScheme
+  const toggleColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
+    else localStorage.setItem('colorScheme', 'light');
+  }
+
+  // Set toggle input handler
+  const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+  if (toggle) toggle.onclick = () => {
+    toggleDarkMode();
+    toggleColorScheme();
+  }
+
+  // Check for color scheme on init
+  const checkColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    // Default to light for first view
+    if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
+    // If previously saved to dark, toggle switch and update colors
+    if (colorScheme === 'dark') {
+      toggle.checked = true;
+      toggleDarkMode();
+    }
+  }
+  checkColorScheme();
+</script>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Камбоджа и банковские карты" />
+<meta name="twitter:image" content="/images/noone_ico_grey.svg" />
+
+
+<br>
+<h1 style="margin-bottom:7px"> Камбоджа и банковские карты </h1>
+<small style="float:left; color: #888"> 2023 May 15 </small>
+<small style="float:right; color: #888"><a href="../../../../index.html">See all posts</a></small>
+<br> <br> <br>
+<title> Камбоджа и банковские карты </title>
+
+<p>Когда-то в 2015 году, когда это еще не было мейнстримом, а я долго
+жила тут, сделала себе банковскую карту. И до сих пор считаю, что это
+одна из лучших карт:</p>
+<ul>
+<li>Счет в долларах, легко пополнить через крипту. На бинансе торгуют
+боты, поэтому нет вообще никакого тупняка - деньги приходят
+мгновенно.</li>
+<li>Лимит - 50к$ в день.</li>
+<li>В приложении можно выпускать до 5 виртуальных visa и master карт,
+устанавливать на них лимиты на сумму и количество транзакций.</li>
+<li>Физическая карта выпускается на 5 лет.</li>
+<li>Отдельный счет хранения и счет карты</li>
+<li>OTP приходит на выбор: в приложение, смс или на email</li>
+</ul>
+<p>У меня еще не было места, где бы эта карта не прошла к оплате. В 2020
+году она закончилась, но я выпустила виртуалку и продолжала ей успешно
+пользоваться, так как прилететь за новой в ковид не было шансов. Но в
+начале 2021 года ABA-bank объявил, что перестал поддерживать
+интернет-банкинг для частных клиентов. Итернет-банкинг - в смысле, что
+стало невозможно заходить через браузер. В общем-то их можно понять -
+мало кому он нужен, у всех есть телефоны и мобильные приложения на нем.
+Но, так как камбоджийскую симку за эти 6 лет, я успела успешно потерять
+- то осталась и без банка и без приложения, а Камбоджа осталась с парой
+тысяч моих долларов. Я, конечно взгрустнула, однакож что поделать....</p>
+<p>Поделать я попробовала следующее: Отправила своих друзей в Камбо с
+моей копией паспорта в Metfon с наказом купить эту симку любой ценой.
+Квест оказался очень простым и обошелся всего лишь в 10 минут времени и
+20$. И вот я уже было возрадовалась, однако банк оказался добротно
+защищен. Да я поставила приложение, друзья на связи и готовы скинуть otp
+для регистрации приложения. Однакож... otp нельзя ввести ручками. Симка
+должна стоять в телефоне и приложение само считывает нужные данные из
+смс. Пока пару раз мы попробовали и так и сяк, и на андроид и на айфон -
+банк распознал подозрительную активность и все заблокировал, написав,
+что ждет мою тушку в ближайшем отделении. На том идеи закончились и все
+было отложено до окончания ковида.</p>
+<p>И вот, наконец в начале 2023 года я приехала в Камбо. А теперь -
+вива!:</p>
+<blockquote>
+<p>Всем владельцам индийских банковских карт посвящается:</p>
+</blockquote>
+<ul>
+<li>восстановление банковского счёта со сменой номера паспорта (у меня
+он за это время тоже успел смениться), номера телефона и выпуском новой
+именной эмбассированой карточки на 5 лет заняло... 15 минут.
+<strong>Пятнадцать</strong>, блеатЪ, минут! И даже не в той провинции,
+где семь лет назад этот счёт был открыт. Оказывается так можно!</li>
+</ul>
+<p>Эмбассированную карту клиент сам печатает в банкомате! Подходишь,
+выбираешь в приложении нужную опцию, сканируешь куар и вуаля: "Ваша
+карта будет готова через 3 минуты, по окончании процесса вы получите
+смс"</p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/1.jpg" /></p>
+<p>Ноготки девочки-оператора, которая это всё оформляла:</p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/2.jpeg" /></p>
+<p>Небольшой нюанс, чтобы все сразу не полетели выпускать карты: сейчас
+ее выпуск обойдется в районе 500$. 35$ - e-type виза по прилету. Ее надо
+будет продлить как минимум на полгода, чтобы начать считаться резидентом
+страны (в моем случае в 2015 году я и так это делала, так как там жила).
+Никаких сложностей в этом нет, просто заносится паспорт и деньги в
+ближайшее агенство и через 10 дней забирается с готовой визой. Цена
+~180$. И сейчас еще нужна одна бумажка, называемая work permit. Так же
+как и с визой - это не проблема, а просто расходы. Тоже в районе 200$.
+После этого - можно идти в банк. Открытие счета, как и раньше занимает
+около получаса.</p>
+<hr />
+<p>Поинт два - именно в это время в Камбодже были сатсанги моего
+любимого Ренца. Умеет он все же выбирать места:</p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/3.jpeg" /></p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/4.jpeg" /></p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/5.jpeg" /></p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/6.jpg" /></p>
+<hr />
+<p>И чутка камбоджийской загадочности:</p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/7.jpeg" /></p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/8.jpeg" /></p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/9.jpeg" /></p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/13.jpeg" /></p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/10.jpeg" /></p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/11.jpeg" /></p>
+<p><img
+src="https://bafybeibgo5oq6ltp5bpcotvqf4czzd2b7vvmhjlrkfhvmjd525vwapjsvq.ipfs.flk-ipfs.xyz/12.jpeg" /></p>
+ </div> 

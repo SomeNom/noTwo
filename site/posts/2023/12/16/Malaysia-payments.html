@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: white;
+    }
+    .markdown-body table tr {
+        background-color: #1c1c1c;
+    }
+    .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+    }
+}
+</style>
+
+
+
+<link rel="alternate" type="application/rss+xml" href="../../../../feed.xml" title="Touch`n Go, Big Pay и другие способы cashless оплаты в Малайзии">
+<link rel="shortcut icon" href="/images/noone_ico_grey.svg" />
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/fretboard.f32f2a8d5293869f0195.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty.0ae3265014f89d9850bf.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/global.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/misc.css">
+
+<script type="text/x-mathjax-config">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  },
+  svg: {
+    fontCache: 'global',
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="../../../../scripts/tex-svg.js">
+</script>
+
+<style>
+</style>
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+<div id="color-mode-switch">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+  </svg>
+  <input type="checkbox" id="switch" />
+  <label for="switch">Dark Mode Toggle</label>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+  </svg>
+</div>
+
+<script type="text/javascript">
+  // Update root html class to set CSS colors
+  const toggleDarkMode = () => {
+    const root = document.querySelector('html');
+    root.classList.toggle('dark');
+  }
+
+  // Update local storage value for colorScheme
+  const toggleColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
+    else localStorage.setItem('colorScheme', 'light');
+  }
+
+  // Set toggle input handler
+  const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+  if (toggle) toggle.onclick = () => {
+    toggleDarkMode();
+    toggleColorScheme();
+  }
+
+  // Check for color scheme on init
+  const checkColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    // Default to light for first view
+    if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
+    // If previously saved to dark, toggle switch and update colors
+    if (colorScheme === 'dark') {
+      toggle.checked = true;
+      toggleDarkMode();
+    }
+  }
+  checkColorScheme();
+</script>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Touch`n Go, Big Pay и другие способы cashless оплаты в Малайзии" />
+<meta name="twitter:image" content="/images/noone_ico_grey.svg" />
+
+
+<br>
+<h1 style="margin-bottom:7px"> Touch`n Go, Big Pay и другие способы cashless оплаты в Малайзии </h1>
+<small style="float:left; color: #888"> 2023 Dec 16 </small>
+<small style="float:right; color: #888"><a href="../../../../index.html">See all posts</a></small>
+<br> <br> <br>
+<title> Touch`n Go, Big Pay и другие способы cashless оплаты в Малайзии </title>
+
+<p>Вот уже почти год влалельцы красных паспортов отключены от нормальных
+банковских систем платежей visa и mastercard. Калечный unionpay назвать
+нормальным можно с натяжкой, так как то в одном, то в другом чате
+всплывают крики о помощи "оббежал 10 банкоматов - нигде не выдает,
+чёделать?". Приходится в каждой стране интересоваться как же платят
+местные и где можно найти лазейку, чтобы тоже так делать.</p>
+<p>Банковский счёт/карта по туристическому штампу не открывается,
+поэтому дальше интерес я не проявляла в эту сторону. Но все малайцы в
+основном пользуются не картами, а платят через электронные кошельки.</p>
+<p><img
+src="https://bafybeigetmcvx2jbuzlq46r733g7zsnyz7nef5qfokhqnbq5kimj44gyxa.ipfs.flk-ipfs.xyz/1.jpg" /></p>
+<p>Тут достаточно широкое поле для изучения. Приложений - несколько
+десятков. Платить из одного в другое - нельзя. То есть, если мерчант
+принимает shopee - вы можете заплатить ему только им. Если grab - то
+только через grab и так далее. Все эти приложения требуют KYC (ну
+понятно, везде где есть деньги он нужен). Какие-то иностранцев
+верифицируют без проблем, какие-то с проблемами, какие-то и вовсе
+отклоняют. Опишу те, что я попробовала:</p>
+<h2 id="touch-n-go">Touch `n Go</h2>
+<p><img
+src="https://bafybeigetmcvx2jbuzlq46r733g7zsnyz7nef5qfokhqnbq5kimj44gyxa.ipfs.flk-ipfs.xyz/2.jpg" /></p>
+<p>Одно из самых полезных и самых используемых. Но приложение очень
+требовательно к ресурсам. В 2022 году, когда я как раз начала вникать во
+все эти платежки, оно у меня не запустилось вообще, так как на основном
+телефоне был root, а резервный - просто не тянул. Но через год, когда
+обзавелась новым телефоном - все получилось и сейчас это основное
+приложение, которым я плачу в Малайзии.</p>
+<p>Скачать: <a
+href="https://touchngoewallet.onelink.me/8mmV/linkshare">touchngoewallet.onelink.me</a></p>
+<ul>
+<li>К приложению тоже можно выпустить карту, доставляют по Малайзии не
+больше недели. Полноценная visa, без всяких ограничений оплаты за
+рубежом (ну кроме разве, что тех мест, где требуется оплата кредитной, а
+не припейд-картой, например Digital Ocean)</li>
+<li>Можно привязать так же карту оплаты проезда (тоже TnG, но именно
+транспортную) и пополнять через NFS</li>
+<li>И еще куча-куча разных фишечек и плюшечек, которые устану тут
+перечислять. В общем надо брать, однозначно. При том, что верификация
+проходит очень быстро, туристического штампа достаточно.</li>
+</ul>
+<p>Для регистрации нужно:</p>
+<ul>
+<li>малайский номер телефона</li>
+<li>email</li>
+<li>потом сфоткать паспорт и покрутить головой на камеру</li>
+<li>пополнить счёт в приложении на 20 рингит</li>
+</ul>
+<p>Вот с последним происходит небольшой конфьюз, потому что со многих
+иностранных карт пополнить нельзя. Но это можно сделать кешем в
+ближайшем "7/11", либо пополнить с карты товарища, у которого уже что-то
+малайское есть (не забыв при этом, после пополнения карту отвязать).</p>
+<p>После этого TnG активен. В приложении появляется виртуальная visa и
+активируется возможность заказать реальную. Моя пришла через 5 дней.</p>
+<p>Легко пополняется криптой через p2p на Bybit или HTX. Binance с
+малайскими рингитами не работает.</p>
+<blockquote>
+<p>UPD: Недавно TnG заколлабился с AliPay и теперь куарами из приложения
+можно платить в десятке других стран: Китай, Тайланд, Япония, Непал и
+др.</p>
+</blockquote>
+<h2 id="bigpay">BigPay</h2>
+<p><img
+src="https://bafybeigetmcvx2jbuzlq46r733g7zsnyz7nef5qfokhqnbq5kimj44gyxa.ipfs.flk-ipfs.xyz/3.jpg" /></p>
+<p>Скачать: <a href="https://bigpayme.com/#footer">BigPayme.com</a>. При
+регистрации по рефералке обоим дают по 5rm. Мой реф-код: 5UWEOSFHKC</p>
+<p>Процесс регистрации похож на TnG. Более лоялен к пополнению с
+зарубежных карт примерно 50/50. Кому-то это удалось с карты, выпущенной
+в Голландии, мне - с норвежской. Так же у меня были попытки с индийской,
+у товарища с английской - обе реджектед.</p>
+<p>Лимиты и чарджи:</p>
+<ul>
+<li>2,5rm в месяц, если не пользуетесь картой</li>
+<li>6rm за снятие в банкомате в Малайзии и 10rm overseas</li>
+<li>10000rm в день на снятие в ATM</li>
+<li>250rm - contactless оплата</li>
+<li>20000rm можно иметь максимально на баллансе</li>
+</ul>
+<p>Криптой пополняется не так легко. Раньше был на Pexpay, но сейчас ни
+на одной из бирж его не вижу. Но... можно пополнить с TnG ;)</p>
+<hr />
+<blockquote>
+<p>В малайских платежках есть такая фича. Вот платежка. деньги хранятся
+в ней, переводы внутри одной платежки можно делать. Но как быть, если
+вам на TnG хотят перевести денег с BigPay, например? Для этого есть
+<strong>Malaysian National QR</strong>. Регистируясь в любой из платежек
+вы получаете его автоматом, он привязывается к номеру телефона. И потом,
+когда платежек несколько, единовременно этот куар можно подключить
+только к одной из них. Для того чтобы ОТПРАВИТЬ перевод он не нужен. Вы
+переводите (или платите приложением). Но, чтобы деньги ПОЛУЧИТЬ - он
+нужен. И в зависимости от того к какому именно приложению он подключен в
+данный момент - туда и придут деньги. Удобное. Это мой DuitNow. Если вам
+этот текст как-то помог и вы хотите меня отблагодарить - с радостью
+приму. Кстати, в названии забавная игра слов: duit - по-малайски
+"деньги". Долгое время я думала что это просто английское "Do it now",
+просто записанное на малайский манер.</p>
+</blockquote>
+<p><img
+src="https://bafybeigetmcvx2jbuzlq46r733g7zsnyz7nef5qfokhqnbq5kimj44gyxa.ipfs.flk-ipfs.xyz/5.jpg" /></p>
+<blockquote>
+<p>Так же в TnG можно настроить пополнение балланса с BigPay-карты и
+наоборот. Таким образом можно не складывать все яйца в одну корзину:
+если что-то случится с одной - можно быстренько оплатить другой.</p>
+</blockquote>
+<hr />
+<h2 id="grab">Grab</h2>
+<p><img
+src="https://bafybeigetmcvx2jbuzlq46r733g7zsnyz7nef5qfokhqnbq5kimj44gyxa.ipfs.flk-ipfs.xyz/4.jpg" /></p>
+<p>Скачать: <a
+href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger">Google
+Play</a></p>
+<p>Это как и TnG целый комбаин возможностей, но других:</p>
+<ul>
+<li>такси (кстати в Малайзии нет байк-такси, только машины)</li>
+<li>доставка всего и отовсюду</li>
+<li>еда</li>
+<li>билеты</li>
+<li>и еще много-много всего</li>
+</ul>
+<p>Так же им можно платить, но менее популярен для этого, чем TnG.
+Принцип регистрации как и у всех других подобных приложений: номер
+телефона, почта, KYC. По умолчанию лимит какой-то не очень большой,
+может 150rm в день. Но я верефицировалась довольно легко через службу
+поддержки (автоматом меня реджектнуло)</p>
+<p>Карты нет, через крипту не пополнить, но зато возможно пополнение с
+большинства иностранных карт. Приняты индийская, узбекская, малайская,
+разумеется тоже.</p>
+<hr />
+<p>Для работоспособности всех этих приложений нужна рабочая симка. У
+меня <a href="https://www.celcomdigi.com/postpaid">Digi</a>, но, вроде
+как остальные мобильные операторы имеют схожие пакеты. Купить можно в
+7/11, family mart и иже с ними за 10rm и активировать самому (иногда по
+непонятным причинам симка может не активироваться). Или в салоне. Или у
+китайцев в чайна-тауне. В последнем случае выйдет переплата 5-10 ринит,
+но зато китаец все активирует сам. Тарифы есть автопополняемые, есть
+одноразовые, но это не суть - там легко разобраться. А вот что
+действительно важно - как эту симку сохранить после отъезда из Малайзии.
+Ибо если не пользоваться отключается она довольно быстро, буквально
+через 1-2 месяца. На Digi есть тариф "long life" - за 108 рингит можно
+продлить действие симки на год без всяких дополнительных телодвижений в
+течении этого периода. Виден он только, если на баллансе есть
+достаточная сумма. И периодически, обычно 15-20 числа каждого месяца, в
+приложении появляется промо - тот же самый long life, но уже за 38
+рингит. Надо ловить и брать.</p>
+<p>С роумингом для приема смс проблем никаких нет - у меня еще не было
+страны, где бы эта симка не заработала. Кстати в Турции оказалось
+дешевле подключить интернет-роуминг и пользоваться им, чем купить симку
+местную.</p>
+ </div> 
