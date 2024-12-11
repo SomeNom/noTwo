@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <rss version="2.0">
 <channel>
-  <title>NoOne's space</title>
+  <title>NoTwo's space (test space)</title>
   <link>http://localhost/</link>
-  <description>NoOne's space</description>
+  <description>NoTwo's space (test space)</description>
   <image>
       <url>/images/noone_ico_grey.svg</url>
-      <title>NoOne's space</title>
+      <title>NoTwo's space (test space)</title>
       <link>http://localhost/</link>
   </image>
 
