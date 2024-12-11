@@ -11,10 +11,19 @@
   </image>
 
 <item>
-<title>Test</title>
-<link>http://localhost/./posts/2030/01/07/test.html</link>
-<guid>http://localhost/./posts/2030/01/07/test.html</guid>
-<pubDate>Mon, 07 Jan 2030 00:00:00 +0000</pubDate>
+<title>Индийские поезда</title>
+<link>http://localhost/./posts/2024/12/10/indian-train.html</link>
+<guid>http://localhost/./posts/2024/12/10/indian-train.html</guid>
+<pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+<description></description>
+</item>
+
+
+<item>
+<title>Три озера</title>
+<link>http://localhost/./posts/2024/12/06/3-lakes.html</link>
+<guid>http://localhost/./posts/2024/12/06/3-lakes.html</guid>
+<pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
 <description></description>
 </item>
 
