@@ -1,0 +1,1078 @@
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: white;
+    }
+    .markdown-body table tr {
+        background-color: #1c1c1c;
+    }
+    .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+    }
+}
+</style>
+
+
+
+<link rel="alternate" type="application/rss+xml" href="../../../../feed.xml" title="Мои приложения (Android)">
+<link rel="shortcut icon" href="/images/noone_ico_grey.svg" />
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/fretboard.f32f2a8d5293869f0195.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty.0ae3265014f89d9850bf.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/global.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/misc.css">
+
+<script type="text/x-mathjax-config">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  },
+  svg: {
+    fontCache: 'global',
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="../../../../scripts/tex-svg.js">
+</script>
+
+<style>
+</style>
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="oneno" data-color="" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+
+<div id="color-mode-switch">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+  </svg>
+  <input type="checkbox" id="switch" />
+  <label for="switch">Dark Mode Toggle</label>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+  </svg>
+</div>
+
+<script type="text/javascript">
+  // Update root html class to set CSS colors
+  const toggleDarkMode = () => {
+    const root = document.querySelector('html');
+    root.classList.toggle('dark');
+  }
+
+  // Update local storage value for colorScheme
+  const toggleColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
+    else localStorage.setItem('colorScheme', 'light');
+  }
+
+  // Set toggle input handler
+  const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+  if (toggle) toggle.onclick = () => {
+    toggleDarkMode();
+    toggleColorScheme();
+  }
+
+  // Check for color scheme on init
+  const checkColorScheme = () => {
+    const colorScheme = localStorage.getItem('colorScheme');
+    // Default to light for first view
+    if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
+    // If previously saved to dark, toggle switch and update colors
+    if (colorScheme === 'dark') {
+      toggle.checked = true;
+      toggleDarkMode();
+    }
+  }
+  checkColorScheme();
+</script>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Мои приложения (Android)" />
+<meta name="twitter:image" content="/images/noone_ico_grey.svg" />
+
+
+<br>
+<h1 style="margin-bottom:7px"> Мои приложения (Android) </h1>
+<small style="float:left; color: #888"> 2024 Dec 13 </small>
+<small style="float:right; color: #888"><a href="../../../../index.html">See all posts</a></small>
+<br> <br> <br>
+<title> Мои приложения (Android) </title>
+
+<p>Накидаю список приложений, которые стоят у меня на телефоне, вдруг
+кому-нибудь пригодиться. Банковские аппки опущу, так как понятно, что
+они у каждого свои. Так же с некоторого времени перестала ставить на
+телефон рут, так как это переходит в бесконечною войну банковских
+приложений и обновлений модулей Magisk. Заодно положу сразу ссылки, где
+лучше скачать каждое приложение.</p>
+<h1 id="магазины-приложений">Магазины приложений</h1>
+<p>Собственно первое - где эти приложения брать ибо далеко не все есть
+на Google play, а даже если есть - они могут быть с кучей рекламы, либо
+же за деньги.</p>
+<h3 id="f-droid">F-Droid</h3>
+<blockquote>
+<p>Скачать <a href="https://f-droid.org">тут</a>. В нем лежат аппки
+только с открытым исходным кодом, зачастую немного сырые. Из плюсов -
+много мелких приложений под одну конкретную задачу, а не больших
+комбаинов, в которых половина функций нафиг не нужна.</p>
+</blockquote>
+<h3 id="pda">4PDA</h3>
+<blockquote>
+<p>Приложение от одноименного <a
+href="https://4pda.to/forum/index.php?showtopic=673755">сайта</a> на
+котором есть много ломаных версий платных программ (или же без рекламных
+addons). Для скачивания приложений необходима регистрация на форуме.</p>
+</blockquote>
+<h3 id="ffupdater">FFUpdater</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/de.marmaro.krt.ffupdater">F-Droid</a>.
+Это не полноценный магазин приложений, а скорее аппка, позволяющая
+обновлять пачку моих браузеров в один клик (в последнее время там
+появились еще несколько почтовых клиентов, так что прога
+развивается).</p>
+</blockquote>
+<hr />
+<h1 id="браузеры">Браузеры</h1>
+<p>У меня их стоит много и разных. Во-первых, под разные задачи.
+Во-вторых, некоторые сайты лучше отображаются в определенных браузерах.
+Например вот этот сайт имеет очень мелкий шрифт в DuckDuckGo, но
+нормальный в FireFox.</p>
+<h3 id="duckduckgo">DuckDuckGo</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/com.duckduckgo.mobile.android">F-Droid</a>.
+Основной браузер сейчас. Быстрый, ничего лишнего и самое главное -
+генерит одной кнопкой временные емейлы для регистрации на разных
+ресурсах, нужных первый и последний раз. Нет плагинов.</p>
+</blockquote>
+<h3 id="firefox">FireFox</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=firefox&amp;c=apps">GP</a>.
+Когда "утка" не справляется. Например с сайтом индийских железных дорог.
+Так же зачастую через утку, так как она настроена на максимальную
+приватность, не очень хорошо получается провести оплату и тп.</p>
+</blockquote>
+<h3 id="fennec">Fennec</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/org.mozilla.fennec_fdroid">F-Droid</a>.
+Совсем запасной вариант. Когда в других открыто слишком много окон,
+которые все еще нужны под конкретную задачу, а прямо сейчас нужно что-то
+поискать не по этой теме, потом закрыть и забыть.</p>
+</blockquote>
+<h3 id="chrome">Chrome</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.android.chrome">GP</a>.
+Когда сайт не отображается корректно нигде, chrome - это последняя
+инстанция. Если и в нем все через одно место - значит не поможет уже
+вообще ничего. Все настройки базовые, ничего не запрещаю ему, просто
+пользую только в крайнем случае.</p>
+</blockquote>
+<h3 id="tor-browser">Tor Browser</h3>
+<blockquote>
+<p><a href="https://www.torproject.org/download/#android">Офф-сайт</a>.
+Тут все понятно. Иногда туда надо.</p>
+</blockquote>
+<h3 id="raindrop.io">RainDrop.io</h3>
+<blockquote>
+<p><a href="https://raindrop.io">Офф-сайт</a>. Онлайн-сервис закладок
+(тех, которые bookmark). Пересмотрела несколько, но остановилась на этом
+так как есть и приложение и addon почти ко всем браузерам и просто
+web-версия.</p>
+</blockquote>
+<h3 id="pipepipe">PipePipe</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/InfinityLoop1309.NewPipeEnhanced/">F-Droid</a>.
+Просмотрщик Youtube, без аккаунта и рекламы. Вариативно, потому что
+периодически ютуб совершенствует свои алгоритмы, и какая-то из программ
+может за ним не успевать. Сейчас вот актульно эта, а там их несколько
+штук разных, еще нормальный LibreTube.</p>
+</blockquote>
+<h3 id="antennapod">AntennaPod</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/de.danoeh.antennapod/">F-Droid</a>.
+Подкасты. Тут я не сильно искушенная. Поставила первое попавшееся
+приложения и вроде окей, все работает.</p>
+</blockquote>
+<hr />
+<h1 id="коммуникация-с-миром">Коммуникация с миром</h1>
+<h2 id="почта">Почта</h2>
+<p>Тоже много, разные для разных регистраций. В целом деление такое:</p>
+<ul>
+<li>совсем важное (банки, визы и тп),</li>
+<li>билеты, доставка, маркет-плейсы (все, что знает мои реальные данные,
+но от потери этих акков я не умру; к тому это все постоянно шлет всякие
+промо, среди которых реально важное можно легко потерять)</li>
+<li>SM (там где вроде как я, но не я)</li>
+<li>сайты, форумы и прочее нужное, где моей личности присутсвует
+минимально</li>
+<li>все остальное (какие-то единоразовые отправки, туда же
+переадресуются письма со временных е-мейлов)</li>
+</ul>
+<p>И вот под всю эту историю разные серверы и соответсвенно разные
+почтовые клиенты:</p>
+<h3 id="proton-mail">Proton Mail</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=731590">4PDA</a>.
+Основная почта, точнее даже несколько. Премиум-фичи есть в версиях,
+разблокированных на 4PDA.</p>
+</blockquote>
+<h3 id="k-9-mail">K-9 Mail</h3>
+<blockquote>
+<p><a href="https://f-droid.org/en/packages/com.fsck.k9">F-Droid</a>.
+Собирает почту с гугла и яндекса.</p>
+</blockquote>
+<h3 id="mailfence">MailFence</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.contactoffice.mailfence">GP</a>.
+Почта без привязки номера телефона или резервного емейла. Некоторые
+сайты ее не очень любят.</p>
+</blockquote>
+<h3 id="tutanota">TutaNota</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/de.tutao.tutanota">F-Droid</a>. То
+же самое. Без смс и подтверждения чего-то еще.</p>
+</blockquote>
+<h2 id="месседжеры">Месседжеры</h2>
+<h3 id="element">Element</h3>
+<blockquote>
+<p><a href="https://element.io/download">Офф-сайт</a>. Основной сейчас
+месседжер для общения. Мультиплатформ, опенсурс, децентралайз (по
+серверам, можно поднять свой). Сервер по умолчанию matrix.org
+заблокирован в России. Раньше для регистрации не надо было вообще
+ничего, сейчас хотят емейл, временная почта от DuckDuckGo годится.</p>
+</blockquote>
+<h3 id="whatsapp">WhatsApp</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.whatsapp">GP</a>.
+Использую только для всяких сервисов, типа доставки и покупки билетов,
+соответственно в каждой стране номер переключаю на локальный. На 4PDA
+куча модов, но не вникала, не интересно, ставлю обычный клиет из GP.</p>
+</blockquote>
+<h3 id="forkgram">Forkgram</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/org.forkgram.messenger">F-Droid</a>.
+Форк телеги. Может в некоторые фичи, доступные только по премиум
+подписке. Ну и вообще интерфейс поприятнее.</p>
+</blockquote>
+<h3 id="conversations">Conversations</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/eu.siacs.conversations/">F-Droid</a>.
+Месседжер по jaber-протоколу. Нормальный вроде, но только для разговора
+тет-а-тет. Общих комнат, которые бы можно было как-то поискать не
+замечено.</p>
+</blockquote>
+<h3 id="jami">Jami</h3>
+<blockquote>
+<p><a href="https://f-droid.org/en/packages/cx.ring">F-Droid</a>. Самый
+простой в плане реги. Придумайте логин/пароль и вперед. Сырой, глючный,
+сообщения теряются. Наверное удалю.</p>
+</blockquote>
+<h3 id="signal">Signal</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms">GP</a>.
+Ставила чтоб посмотреть. Но так как иногда кому-нибудь удобно общаться
+через него - пусть будет. Я не понимаю как можно объявлять приватным
+месседжер, который регистрируется на номер телефона. Да можно, конечно
+сделать на левую симку, но тут бы нормальные вовремя не забыть отзвонить
+и пополнить, а еще левую содержать - так себе развлечение. Тем паче, что
+есть element, conversations, delta и еще куча других.</p>
+</blockquote>
+<h3 id="delta-chat">Delta Chat</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/com.b44t.messenger">F-Droid</a>.
+Месседжер на основе почтового протокола. По идее, даже если заблокируют
+все - он останется.</p>
+</blockquote>
+<h3 id="yolla">Yolla</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.yollacalls">GP</a>.
+IP-телефония. Вообще ставила для друга и он ей и пользуется. Но пополняю
+ее я, через малайские подарочные GPlay-карты. Ну и вдруг мне приспичит
+куда-нибудь срочно позвонить, пусть будет.</p>
+</blockquote>
+<h3 id="google-meet">Google Meet</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.google.android.apps.tachyon">GP</a>.
+На удивление сюда попал. Видео-созвоны. Дает максимально качественную
+картинку. Element, кстати, тоже был в этом хорош, но для РФ теперь не
+годиться, так как там работает тока через vpn, соответсвенно качество
+резко похерилось.</p>
+</blockquote>
+<h2 id="socialmedia">SocialMedia</h2>
+<h3 id="husky">Husky</h3>
+<blockquote>
+<p><a href="https://f-droid.org/en/packages/su.xash.husky">F-Droid</a>.
+Клиент для Mastodon, единственной sm, куда я вообще что-то пощу по
+мелочи: какую-нибудь фотку или короткий текст. Нет рекламы и продвижения
+ни в каком виде. Для просмотра не нужна регистрация. Разумное
+ограничение в 4 фотки и 500 символов на пост. Моя страница: <a
+href="https://mastodon.social/@Oneno">тыц</a></p>
+</blockquote>
+<h3 id="instagram">Instagram</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.instagram.android">GP</a>.
+Использую только, если там надо что-то посмотреть, свой не веду.</p>
+</blockquote>
+<h3 id="x-twitter">X (Twitter)</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.twitter.android">GP</a>.
+Тоже самое, только если надо что-нибудь глянуть. Своего нет.</p>
+</blockquote>
+<h3 id="linkedin">LinkedIN</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.linkedin.android">GP</a>.
+Ну, просто есть. работу там не ищу.</p>
+</blockquote>
+<hr />
+<h1 id="медиа">Медиа</h1>
+<h2 id="images">Images</h2>
+<h3 id="simple-gallery">Simple Gallery</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=785182">4PDA</a>.
+Прога из целой серии Simple от <a
+href="https://simplemobiletools.com/">Simple Mobile Tools</a>. Как они
+сами пишут у себя на сайте: A group of simple, open source Android apps
+without ads and unnecessary permissions, with customizable colors. Можно
+выбрать какие папки отображать, а какие нет. Простым растягиванием
+экрана выбирается размер сетки превьюшек. В общем, все что нужно и
+ничего лишнего. В модифицированной версии с 4PDA нет просьбы
+задонатить.</p>
+</blockquote>
+<h3 id="snapseed">SnapSeed</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=406096">4PDA</a>.
+Редактирование фоток. Быстро удобно, красивые пресеты.</p>
+</blockquote>
+<h3 id="photo-editor">Photo Editor</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=331616">4PDA</a>.
+Второй редактор. Тут удобно накладывать всякие надписи на изображение, а
+так же более тонкая настройка через curves и levels.</p>
+</blockquote>
+<h3 id="photogrid">PhotoGrid</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=244247">4PDA</a>.
+Тоже может немного редактировать, но хуже чем два предыдущих. Этот
+использую только для коллажей.</p>
+</blockquote>
+<h3 id="made">Made</h3>
+<blockquote>
+<p><a
+href="https://bafybeidkfpdak2a62z6tegv7koelmyi2ycgs5xwyxjkykejg3fc5wn2u3a.ipfs.flk-ipfs.xyz/made.storyeditor-1.2.15.apk">Тыц</a>.
+Где взяла не нашла, на GP есть платная версия. Тоже коллаж-мейкер,
+только более продвинутый с надписями и кучей других фишек.</p>
+</blockquote>
+<h3 id="imagetoolbox">ImageToolbox</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=1073617">4PDA</a>.
+Сжатие изображений (в т.ч. пакетное), обрезка, наложение фильтров,
+редактирование EXIF данных.</p>
+</blockquote>
+<h2 id="music">Music</h2>
+<h3 id="aimp">AIMP</h3>
+<blockquote>
+<p><a href="https://www.aimp.ru">Офф-сайт</a>. Вообще, если честно мне
+не нравится ни один проигрыватель. Те, которые дают нормальный звук -
+как правило имеют дурацкий интефейс, и наоборот. С AIMP более-менее
+смирилась, ибо качество звука все же в приоритете.</p>
+</blockquote>
+<h3 id="ringtone-maker">Ringtone Maker</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=276916">4PDA</a>.
+Резка/урезка/обрезка аудио. Иногда бывает надо переслать кому-нибудь
+часть аудио-сообщения, удобно отрезать лишнее.</p>
+</blockquote>
+<h3 id="nothing-x">Nothing X</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.nothing.smartcenter">GP</a>.
+Прога от блутуз наушников.</p>
+</blockquote>
+<h2 id="video">Video</h2>
+<h3 id="vlc-player">VLC player</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/org.videolan.vlc">F-Droid</a>.
+Видео-плеер. Норм, всем устраивает, все показывает. Альтернативы не
+ищу.</p>
+</blockquote>
+<h3 id="youcut">YouCut</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=966471">4PDA</a>.
+Видео-редактор.</p>
+</blockquote>
+<hr />
+<h1 id="офисное">Офисное</h1>
+<h3 id="wps-office">WPS Office</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=275306">4PDA</a>.
+На самом деле нужен очень редко. Посмотреть какой-нибудь файл word или
+excel. Ни о каком полноценном редактирование речи не идет, если только
+пару слов поправить, не более того. Все серьезное - лучше на ноуте.</p>
+</blockquote>
+<h3 id="colornote">ColorNote</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=179404">4PDA</a>.
+Заметки. Те, которые надо вот прям щас чиркануть в любом виде, а потом
+уже разобраться нужно это вообще или нет. Списки дел. напоминалки по
+дате. В нем мне не нравится одна вещь - нет никакой другой
+синхронизации, кроме как с гуглом. Либо ручной бекап (на нем и
+остановилась) либо гугл. Но перепробовав 100500 таких преложений - это
+все равно максимально удобное.</p>
+</blockquote>
+<h3 id="joplin">Joplin</h3>
+<blockquote>
+<p><a href="https://joplinapp.org">Офф-сайт</a>. Заметки которые нужны
+уже надолго. Клавитурные сочетания. Номера нужных автобусов в нужном
+городе и стране. Рецепты. Инструкции по перепрошивке телефона. В общем -
+все. Если от ColorNote требуется просто быстро открыться, не стереть
+случайно, то что уже написал, то тут у меня все по папочкам и
+осмысленное. Удобная синхронизация с ноутом через DropBox.</p>
+</blockquote>
+<h3 id="cool-reader">Cool Reader</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=191747">4PDA</a>.
+Читалка.</p>
+</blockquote>
+<h3 id="tiny-scanner">Tiny Scanner</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=625720">4PDA</a>.
+Сканирование документов, фотографий, квитанций или чего угодно. Сканы
+сохраняются как изображения или PDF-файлы.</p>
+</blockquote>
+<h3 id="simple-calendar">Simple Calendar</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=931531">4PDA</a>.
+Просто календарь, не начинает истерично сообщать о датах рождения и
+остальных, по его мнению, важных событиях, когда я просто зашла
+посмотреть какой день недели было 20 декабря 2023 года.</p>
+</blockquote>
+<h3 id="unit-converter-pro">Unit Converter Pro</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=566522">4PDA</a>.
+Конвертер всего во всё. На самом деле довольно редко нужен. Именно для
+валют использую отдельный:</p>
+</blockquote>
+<h3 id="currency-pro">Currency Pro</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=960537">4PDA</a>.
+Мне удобное. Можно вывести на главный экран нужные валюты. Плюсовать и
+отнимать в разных валютах. В общем топчик, если мне или я должны или
+отдают в разных валютах - все само сложит и выдаст результат хоть в
+третьей.</p>
+</blockquote>
+<h2 id="язык-который-language">Язык, который language</h2>
+<h3 id="google-translate">Google Translate</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.google.android.apps.translate">GP</a>.
+Хоть и не люблю гугл, но альтернативы не нашла. В Deepl нет непальского
+и хинди.</p>
+</blockquote>
+<h3 id="mydictonary">myDictonary</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=738140">4PDA</a>.
+Словарик любого языка. Разные тренировки. Слова в шторке. Свои слова и
+фразы. В общем, топчик.</p>
+</blockquote>
+<hr />
+<h1 id="geo-и-картография">Geo и картография</h1>
+<h3 id="google-maps">Google Maps</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps">GP</a>.
+Ну тут понятно. По любому стоит, так как и навигация автомобильная у
+него лучше всего и разные заведения с отзывами.</p>
+</blockquote>
+<h3 id="organic-maps">Organic Maps</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/app.organicmaps">F-Droid</a>. Форк
+maps.me, который после продажи его mail.ru стал похож на какашку. В этой
+вариации он без рекламы и тому подобного. Здесь у меня все метки, так же
+его хорошо использовать для треккинга - много тропинок, которых даже
+близко нет на google-maps.</p>
+</blockquote>
+<h3 id="osmand">OsmAnd+</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=181125">4PDA</a>.
+Самые подробные карты, высоты и еще куча разных плюшек, но намного
+тяжелее и ресурсоемчее, чем organic. Поэтому использую его только, когда
+органика не хватает.</p>
+</blockquote>
+<h3 id="wikiloc">WikiLoc</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.wikiloc.wikilocandroid">GP</a>.
+Посмотреть чужие треки. Свои я не выкладываю, так как никогда их не
+пишу, так как сохранность батареи в треке важнее, чем его запись. В
+сомнительных местах просто ставлю точки, чтоб если что потом
+найтись.</p>
+</blockquote>
+<h3 id="flightradar">FlightRadar</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=239024">4PDA</a>.
+Самолетики на карте в реальном режиме времени. Можно посмотреть, что,
+например, происходит с вашим рейсом, который задерживается, быть может
+он еще не долетел из предыдущего аэропорта.</p>
+</blockquote>
+<h3 id="marine-traffic">Marine Traffic</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=marine+traffic&amp;c=apps">GP</a>.
+Тоже самое, что flightradar для самолетов, только для корабликов. На
+4PDA только старые версии, у меня на 14 андроиде не запустилось.</p>
+</blockquote>
+<hr />
+<h1 id="tools">Tools</h1>
+<h2 id="файловые-менеджеры">Файловые менеджеры</h2>
+<h3 id="mixplorer">MiXplorer</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=318294">4PDA</a>.
+На мой взгляд лучший, но может я просто к нему привыкла. Есть еще
+альтернативы по типу <a
+href="https://4pda.to/forum/index.php?showtopic=224555">Total
+Commander</a>, <a
+href="https://4pda.to/forum/index.php?showtopic=178924">X-plorer</a>, <a
+href="https://4pda.to/forum/index.php?showtopic=138744">ES</a> и другие.
+Но естесcтвенно встроеный файловый менеджер не годится at all.</p>
+</blockquote>
+<h3 id="root-explorer">Root Explorer</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=134840">4PDA</a>.
+Не знаю зачем стоит, так как с рутом я уже давно не играюсь особо. Без
+root-прав им можно только посмотреть файлы. Но ресурсов ему не надо, сам
+никуда не запускается, так что пусть лежит - вдруг пригодиться.</p>
+</blockquote>
+<h3 id="primitive-ftpd">primitive FTPd</h3>
+<blockquote>
+<p><a href="https://f-droid.org/en/packages/org.primftpd">F-Droid</a>.
+FTP-сервер. Так как ноут у меня mac, а телефон android подружить их для
+передачи файлов довольно сложно. Единственная программа, которая
+плюс-минут нормально работала это openMTP, но зачастую и она дает сбой,
+если, например перед телефоном к компу подключалась какая-нибудь флешка.
+Поэтому, если надо передать не десятки гигов - ftp-сервер на телефоне и
+FileZilla на компе по быстрому этот вопрос решают.</p>
+</blockquote>
+<h2 id="vpn">VPN</h2>
+<h3 id="open-vpn">Open VPN</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/de.blinkt.openvpn">F-Droid</a>.
+Основной. Одно приложение и к нему можно подключать конфиги разных
+стран. У меня есть приватки от одного друга-разработчика (Russia, USA,
+Netherlands, su, Switzerland,) и периодчески подключаю те страны,
+которые нужны, если нахожу в интернете.</p>
+</blockquote>
+<h3 id="calyx-vpn">Calyx VPN</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/org.calyxinstitute.vpn/">F-Droid</a>.
+Так как своими конфигами я поделиться не могу, то иногда нахожу
+что-нибудь интересное для друзей и оно остается у меня жить на телефоне,
+just-in-case. Этот один из таких. USA. Без рекламы, аддонов и всего
+такого</p>
+</blockquote>
+<h3 id="vpn-malaysia">VPN Malaysia</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=malaysia.vpn_tap2free">GP</a>.
+С аддонами, но что-то конфигов под openVPN я сходу не нашла, а зайти под
+малайским IP нужно было вот прямо щас. Поэтому иногда пользую и терплю
+рекламу.</p>
+</blockquote>
+<h3 id="orbot">Orbot</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=211665">4PDA</a>.
+Tor-vpn. Лучше всего запутывает следы, но его нельзя использовать как
+vpn для доступа куда-либо. Наоброт многие сервисы ограничивают доступ к
+себе по tor-протоколу.</p>
+</blockquote>
+<h2 id="privacy-and-seсurity">Privacy and Seсurity</h2>
+<h3 id="keepassdx">KeePassDX</h3>
+<blockquote>
+<p><a href="https://keepass.info/download.html">Офф-сайт</a>. Оффлайн
+менеджер паролей, зарекомендовавший себя за много лет.</p>
+</blockquote>
+<h3 id="aegis">Aegis</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/com.beemdevelopment.aegis">F-Droid</a>.
+2FA-аутентификация. Полностью оффлайн. Можно делать бекапы,
+экспорт/импорт в Google authenticator.</p>
+</blockquote>
+<h2 id="clouds">Clouds</h2>
+<h3 id="mega">Mega</h3>
+<blockquote>
+<p><a href="https://mega.nz">Офф-сайт</a>. В бесплатной версии дается
+20гб, но можно шарить папки с другого аккаунта друг с другом. Таким
+образом, если есть бесконечное количество почт, на которые можно регать
+акки, можно сделать и бесконечный диск у которого есть только
+ограничение в 20гб на одну папку. Программа для компа отлично
+синхронизирует так же и подключенные папки, а с программой для телефона
+вопрос синхронизации решается через folderSynx.</p>
+</blockquote>
+<h3 id="foldersync-pro">FolderSync Pro</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=258965">4PDA</a>.
+Синхронит любые папки с любыми облаками по расписанию и без в любом
+направлении.</p>
+</blockquote>
+<h3 id="dropbox">DropBox</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=dropbox&amp;c=apps">GP</a>.
+По сути нужен только для синхронизации нескольких программ, например
+Joplin.</p>
+</blockquote>
+<h2 id="разный-остальной-инструмент">Разный остальной инструмент</h2>
+<h3 id="flud">Flud</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=543358">4PDA</a>.
+Закачка торрентов.</p>
+</blockquote>
+<h3 id="qr-scaner">QR Scaner</h3>
+<blockquote>
+<p><a
+href="https://bafybeidkfpdak2a62z6tegv7koelmyi2ycgs5xwyxjkykejg3fc5wn2u3a.ipfs.flk-ipfs.xyz/QR_v2.7.5-P(145).apk">Тыц</a>.
+Так и не нашла где именно я его взяла, но эта аппка уже долгое время
+путешествует со мной от телефона к телефону. В большинстве моделей
+сейчас уже есть встроеный, но я к этому привыкла. Сканирует так же QR с
+изображений и нет автоперехода, в отличии от встроеного. На GP есть
+платная его версия <a
+href="https://play.google.com/store/apps/details?id=com.teacapps.barcodescanner.pro">здесь</a></p>
+</blockquote>
+<h3 id="keep-screen-on">Keep Screen On</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/com.elasticrock.keepscreenon/">F-Droid</a>.
+В выпадающем меню появлеятся быстрая кнопка Keep Screen On. Удобное.
+Чтоб добраться до этого в основном меню надо тапнуть по экрану раз
+5-7.</p>
+</blockquote>
+<h3 id="lockito">Lockito</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=601432">4PDA</a>.
+Fake GPS location. Для некоторых особо рьяных приложений, которым
+недостаточно VPN.</p>
+</blockquote>
+<h3 id="droid-hardware-info">Droid Hardware Info</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.inkwired.droidinfo">GP</a>.
+Выскакивают аддоны на весь экран, но по сути-то он нужен один раз,
+поэтому можно потерпеть. Зато удобный вывод информации.</p>
+</blockquote>
+<h3 id="applistbackup">AppListBackup</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/en/packages/org.androidlabs.applistbackup/">F-Droid</a>.
+Список программ. Как раз то с помощью чего я этот пост делаю.</p>
+</blockquote>
+<h3 id="macrodroid">MacroDroid</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=374521">4PDA</a>.
+Автоматицация повторяющихся действий.</p>
+</blockquote>
+<h3 id="github">GitHub</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.github.android">GP</a>.
+Так как у меня это сайто конечно лежит на хитхабе - то</p>
+</blockquote>
+<h3 id="nfc-tools">NFC Tools</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.wakdev.wdnfc">GP</a>.
+Чтение и информация об nfc-картах.</p>
+</blockquote>
+<h3 id="nrf-connect">nRF Connect</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=nrf+connect&amp;c=apps">GP</a>.
+Низкоуроневая работа с блутуз. Осталось еще со времен робото-рук, иногда
+интересно посмотреть все возможности каких-нибудь блутуз-устройств:
+наушников или колонки, например.</p>
+</blockquote>
+<h1 id="крипта">Крипта</h1>
+<h3 id="binance">Binance</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.binance.dev">GP</a>.
+Пользователей из России не регистрирует больше. Рублей нет, также как и
+малайских рингитов, Однако самый хороший курс непальских рупий именно
+тут.</p>
+</blockquote>
+<h3 id="bybit">ByBit</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.bybit.app">GP</a>.
+Меняют рубли и рингиты.</p>
+</blockquote>
+<h3 id="htx-huobi">HTX (Huobi)</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=pro.huobi">GP</a>.
+Пользуюсь редко, но бывает. В основном как резервная.</p>
+</blockquote>
+<h3 id="trust-wallet">Trust Wallet</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp">GP</a>.
+Некастодиальный кошелек</p>
+</blockquote>
+<h3 id="noone-wallet">NoOne Wallet</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=io.noone.androidwallet">GP</a>.
+Альтернативный некастодиальный кошелек, который использую для
+регистраций и подтверждений. Ничего не знаю о проекте, кроме того, что
+он одноименный со мной. С таким же успехом можно использовать Exsodus,
+Metamask или что-то более известное. Смысл в том, что основной кош с
+деньгами просто больше нигде не фигурирует.</p>
+</blockquote>
+<h3 id="phantom">Phantom</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=app.phantom">GP</a>.
+Чисто солановский кошелек. Использую для каких-нибудь айрдоропов.</p>
+</blockquote>
+<h3 id="tonkeeper">Tonkeeper</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.ton_keeper">GP</a>.
+Кошелек для монет на TON.</p>
+</blockquote>
+<hr />
+<h1 id="перемещения">Перемещения</h1>
+<p>Так как все мы тут, визой гонимые, постоянно переежаем из страны в
+страну, то очень большая часть приложений посвещена этому:</p>
+<h2 id="авиабилеты">Авиабилеты</h2>
+<h3 id="trip.com">Trip.com</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=trip%20com&amp;c=apps">GP</a>.
+В наибольшем приоритете. Даже, если на сайте авиакомпании билет стоит на
+10$ дешевле у трипкома куча плюшек: возврат невозвратных билетов,
+проходки в вип-залы. К тому же цена отображаемая при поиске всегда
+верна, а на сайте авиаперевозчика (особенно этим грешат лоукостеры)
+возрастает по мере оформления билета - нужно очень старательно искать и
+снимать все галочки.</p>
+</blockquote>
+<h3 id="airasia">AirAsia</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.airasia.mobile">GP</a>.
+Все же перелеты у этого авиаперевозчика бывают сильно дешевле
+трипкомовских. Особенно внутри Малайзии, Индонезии и Тайланда. тем паче
+в союзе с малайским BigPay там тоже бывает много разных бонусов.</p>
+</blockquote>
+<h3 id="redbus">RedBus</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=in.redbus.android">GP</a>.
+Работает много где в тч в Малайзии и Индии. Под каждую страну нужен свой
+аккаунт.</p>
+</blockquote>
+<h2 id="жильё">Жильё</h2>
+<p>Тут почти все очевидно:</p>
+<h3 id="agoda">Agoda</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.agoda.mobile.consumer">GP</a>.</p>
+</blockquote>
+<h3 id="booking">Booking</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=booking&amp;c=apps">GP</a>.</p>
+</blockquote>
+<h3 id="airbnb">AirBnB</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=airbnb&amp;c=apps">GP</a>.</p>
+</blockquote>
+<h3 id="goibibo">Goibibo</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.goibibo">GP</a>.
+Индийский сервис. Для Индии незаменим, 50% жилья оттуда нет на букинге.
+И в обратном направлении: отелей-призраков, которые есть на букинге, в
+goibibo нет. Но так же им можно искать жилье и по ЮВА. Ценник зачастую
+ниже, чем на букинге.</p>
+</blockquote>
+<h3 id="couchsurfing">CouchSurfing</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.couchsurfing.mobile.android">GP</a>.
+С ковида стал платным, поэтому пользуюсь редко. Можно оплатить только за
+месяц.</p>
+</blockquote>
+<p>И теперь конкретно необходимые по странам аппки:</p>
+<h2 id="malaysia">Malaysia</h2>
+<h3 id="touchn-go-ewallet">Touch`n Go eWallet</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=my.com.tngdigital.ewallet">GP</a>.
+Электронный кошелек с картой visa, которая отлично работает везде по
+миру. Регистрация он-лайн, долгой визы не надо, достаточно штампа в
+паспорте. Про него, а так же BigPay и Grab я прям подробно писала вот <a
+href="https://noone.on-fleek.app/posts/2023/12/16/Malaysia-payments.html">тут</a>.</p>
+</blockquote>
+<h3 id="bigpay">BigPay</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.tpaay.bigpay">GP</a>.
+Тоже электронный кош с картой. Функционала чуть меньше, чем в TnG.</p>
+</blockquote>
+<h3 id="grab">Grab</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger">GP</a>.
+Такси, доставка. Так же электроный кошелек, но уже без карты.</p>
+</blockquote>
+<h3 id="foodpanda">FoodPanda</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.global.foodpanda.android">GP</a>.
+В отличии от Grab ориентированы только на доставку еды, поэтому выбор
+больше, сервис лучше.</p>
+</blockquote>
+<h3 id="lalamove">LalaMove</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=lalamove&amp;c=apps">GP</a>.
+Только доставка. Дешевле grab.</p>
+</blockquote>
+<h3 id="lazada">Lazada</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.lazada.android">GP</a>.
+Главный маркет-плейс. Есть все и за 3 копейки. Это же приложение
+работает и в Тайланде, но надо будет зарегать новый аккаунт.</p>
+</blockquote>
+<h3 id="shopee">Shopee</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.shopee.my">GP</a>.
+Второй по объему маркет-плейс.</p>
+</blockquote>
+<h3 id="aliexpress">AliExpress</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.alibaba.aliexpresshd">GP</a>.
+Если чего-то нет на Lazada и Shopee - значит пора на алик. Привозят тоже
+достаточно быстро, больше 2х недель я не помню чтобы что-то ждала.</p>
+</blockquote>
+<h3 id="carousell">Carousell</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.thecarousell.Carousell">GP</a>.
+Малайское авито. Смотрела там б/у байки. Стоит из серии - а вдруг еще
+пригодиться.</p>
+</blockquote>
+<h3 id="mudah.my">Mudah.my</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=mudah&amp;c=apps">GP</a>.
+Еще один секонд-хенд маркет. Тут в основном недвига, транспорт и тп.</p>
+</blockquote>
+<h3 id="speedhome">SpeedHome</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=speedhome&amp;c=apps">GP</a>.
+Жилье в Малайзии от 3х месяцев от хозяев. Так как сервис малайский и для
+малайцев, то дешевле, чем AirBnB. Находила как-то на 2 месяца, прожила
+4. Сервис берет свою единоразовую комиссию 500 рингит. Писала о нем
+подробно <a
+href="https://noone.on-fleek.app/posts/2024/03/07/Speedhome.html">тут</a>.</p>
+</blockquote>
+<h3 id="waze">Waze</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.waze">GP</a>.
+Карты и навигация под Малайзию. Знает, где стоят прямо сейчас
+полицейские патрули и оперативно реагирует на закрытие и ремонт
+дорог.</p>
+</blockquote>
+<h3 id="mydigi">MyDigi</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/search?q=MyDigi&amp;c=apps">GP</a>.
+Аппка мобильного оператора.</p>
+</blockquote>
+<h2 id="nepal">Nepal</h2>
+<h3 id="esewa">eSewa</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.f1soft.esewa">GP</a>.
+Платежка. Можно через биржу p2p завести на нее крипту. О том как
+зарегать писала <a
+href="https://noone.on-fleek.app/posts/2024/10/22/Nepal-payment.html">тут</a>.
+Можно покупать билеты на автобусы и многое другое. В теории - даже
+оплачивать визу на границе в Department of Immigration (но у меня не
+получилось, может в следующий раз..)</p>
+</blockquote>
+<h3 id="khalti">Khalti</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.khalti">GP</a>.
+Еще одна платежка. Год назад иностранцев не регали вообще никак, сейчас
+же верифицируют быстрее всего из трех.</p>
+</blockquote>
+<h3 id="ime-pay">IME Pay</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.swifttechnology.imepay">GP</a>.
+Еще одна платежка. Из плюсов - в 2022 году давали карту. Правда только
+на один год и со смешным лимитом 5000npr в месяц. В 2023 хотела получить
+новую карту, но у них физически не было пластика. Виртуалка в приложении
+выпустилась сама.</p>
+</blockquote>
+<h3 id="daraz">Daraz</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.daraz.android">GP</a>.
+Маркет-плейс. Пока что единсвенный в Непале. Но тут ассортимент всего в
+принципе не большой, так что хватает.</p>
+</blockquote>
+<h3 id="indrive">inDrive</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=sinet.startup.inDriver">GP</a>.
+Такси, работающее почти по всем странам ЮА и ЮВА, но во могих из них
+есть локальные и более удобные приложения. А вот в Непале inDrive -
+основное. Оплата только за кеш.</p>
+</blockquote>
+<h3 id="phatao">Phatao</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.pathao.user">GP</a>.
+Такси.</p>
+</blockquote>
+<h3 id="nepal-telecom">Nepal Telecom</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=shirantech.android.nepaltelecom">GP</a>.
+Аппка мобильного оператора.</p>
+</blockquote>
+<h2 id="india">India</h2>
+<h3 id="ixigo">IXIGO</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.ixigo.train.ixitrain">GP</a>.
+Индийские поезда. Покупка билетов, running status и многое другое.</p>
+</blockquote>
+<h3 id="ola">Ola</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.olacabs.customer">GP</a>.
+Самое популярное такси-приложение в Индии.</p>
+</blockquote>
+<h3 id="cleartrip">ClearTrip</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.cleartrip.android">GP</a>.
+Иногда именно тут бывают самые дешевые перелеты внутри Индии. Все
+остальные билеты - дороже или так же как у перевозчика или трипкома.</p>
+</blockquote>
+<h3 id="flipcart">FlipCart</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.flipkart.android">GP</a>.
+Индийский маркет-плейс.</p>
+</blockquote>
+<h3 id="airtel">Airtel</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=com.myairtelapp">GP</a>.
+Приложение мобильного оператора.</p>
+</blockquote>
+<h2 id="russia">Russia</h2>
+<h3 id="korona">Korona</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=ru.tsk.ftc.bender.qpay">GP</a>.
+Золотая Корона. Можно отправить перевод самому себе и тут же получить в
+пункте выдачи в стране, где она еще есть. Конкретно в моем случае это
+были Сербия и Турция. Отправляла с российской карты Озон (раньше еще
+Связной был, но он закрылся)</p>
+</blockquote>
+<h3 id="ozon-банк">Ozon Банк</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=ru.ozon.fintech.finance">GP</a>.
+Неподсанкционный банк (слишком маленький, чтоб им вообще кто-то
+интересовался). Можно открыть удаленно. Лимиты до 600к рублей в месяц,
+что более чем достаточно. Есть карта. Использую для переводов ЗК и
+иногда мне платят на нее за какую-нибудь мелкую работу люди из РФ у
+которых больше ничего нет, кроме российских карт.</p>
+</blockquote>
+<h3 id="qiwi-wallet">Qiwi wallet</h3>
+<blockquote>
+<p><a href="https://play.google.com/store/apps/details?id=ru.mw">GP</a>.
+Достаточно бесполезная штука, но так как есть - то стоит вот.</p>
+</blockquote>
+<h3 id="tele2">Tele2</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=ru.tele2.mytele2">GP</a>.
+Аппка мобильного опертора</p>
+</blockquote>
+<hr />
+<h1 id="всяко-разно">Всяко-разно</h1>
+<h3 id="daff-moon">Daff Moon</h3>
+<blockquote>
+<p><a href="https://4pda.to/forum/index.php?showtopic=626879">4PDA</a>.
+Лунный календарь. Закаты/рассветы. Есть виджетик.</p>
+</blockquote>
+<h3 id="open-sudoku">Open Sudoku</h3>
+<blockquote>
+<p><a
+href="https://f-droid.org/packages/org.moire.opensudoku">F-Droid</a>.
+Тут все понятно. Игруля.</p>
+</blockquote>
+<h3 id="gauguin">Gauguin</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=org.piepmeyer.gauguin">F-Droid</a>.
+Еще одна игруля, по типу судоку.</p>
+</blockquote>
+<h3 id="plantnet">PlantNet</h3>
+<blockquote>
+<p><a
+href="https://play.google.com/store/apps/details?id=org.plantnet">GP</a>.
+На удивление без аддонов. Определение растений по фотке
+цветка/листка/плода/куста.</p>
+</blockquote>
+ </div> 
